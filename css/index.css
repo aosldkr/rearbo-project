@@ -1,0 +1,546 @@
+@import url("./common.css");
+body {
+  background-color: var(--black);
+  color: var(--text-color01);
+}
+
+a.more_btn {
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  margin-top: 30px;
+  padding: 7px 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 300ms;
+  color: var(--white);
+  border: 2px solid #7C6D56;
+}
+a.more_btn:hover {
+  color: var(--black);
+  border: 2px solid var(--white);
+  background-color: var(--white);
+}
+a.more_btn .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+h2 .main_title {
+  display: inline-block;
+  position: relative;
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+}
+h2 .main_title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color2);
+}
+
+.main_movie {
+  width: 100%;
+}
+.main_movie video {
+  width: 100%;
+}
+
+.collection_wrapper {
+  width: 100%;
+}
+.collection_wrapper .collection_list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.collection_wrapper .collection_list figure {
+  width: calc(25% - 20px);
+  max-width: 335px;
+}
+.collection_wrapper .collection_list figure img {
+  width: 100%;
+}
+.collection_wrapper .collection_list figure figcaption {
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.month_wrapper {
+  width: 100%;
+}
+.month_wrapper .month_cont {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.month_wrapper .month_cont:nth-of-type(2) {
+  flex-direction: row-reverse;
+  margin-bottom: 0;
+}
+.month_wrapper .month_cont:nth-of-type(2) .month_area {
+  background-color: #000;
+}
+.month_wrapper .month_cont .month_img {
+  width: 35%;
+  max-width: 539px;
+}
+.month_wrapper .month_cont .month_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.month_wrapper .month_cont .month_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(65% - 40px);
+  background-color: #1E212A;
+}
+.month_wrapper .month_cont .month_area .month_spot {
+  width: 90%;
+}
+.month_wrapper .month_cont .month_area .month_spot .month_title {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.month_wrapper .month_cont .month_area .month_spot .month_title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-color: #7C6D56;
+}
+.month_wrapper .month_cont .month_area .month_spot p:nth-of-type(1) {
+  margin-top: 40px;
+}
+.month_wrapper .month_cont .month_area .month_spot p:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+.new_wrapper {
+  width: 100%;
+}
+.new_wrapper .new_cont {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.new_wrapper .new_area {
+  width: 47%;
+  max-width: 700px;
+}
+.new_wrapper .new_area .new_spot {
+  width: 100%;
+}
+.new_wrapper .new_area .new_spot img {
+  width: 100%;
+}
+.new_wrapper .new_area .new_text_spot {
+  margin-top: 15px;
+}
+.new_wrapper .new_area .new_text_spot b {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.making_perfume_wrapper {
+  width: 100%;
+  height: 740px;
+  padding-top: 150px;
+  background-image: url("../image/index_img/make.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.making_perfume_wrapper .wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.making_perfume_wrapper .wrap .making_perfume_cont {
+  color: var(--white);
+  text-align: left;
+  text-transform: uppercase;
+}
+.making_perfume_wrapper .wrap .making_perfume_cont h2 {
+  margin-bottom: 0;
+  font-size: 48px;
+  font-weight: 600;
+}
+.making_perfume_wrapper .wrap .making_perfume_cont p:nth-of-type(1) {
+  font-size: 40px;
+  font-weight: 600;
+}
+.making_perfume_wrapper .wrap .making_perfume_cont p:nth-of-type(2) {
+  font-size: 20px;
+  font-weight: 300;
+}
+.making_perfume_wrapper .wrap .making_perfume_cont .making_svg_area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 480px;
+  margin-top: 40px;
+}
+.making_perfume_wrapper .wrap .making_perfume_cont .making_svg_area div {
+  text-align: center;
+}
+.making_perfume_wrapper .wrap .making_perfume_cont .making_svg_area div .svg_ring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.making_perfume_wrapper .wrap .making_perfume_cont .making_svg_area div .svg_ring img {
+  width: 47px;
+}
+
+@media (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  .wrap {
+    width: 90%;
+  }
+  .mb180 {
+    margin-bottom: 4.5rem;
+  }
+  a.more_btn {
+    width: 220px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    border: 2px solid #7C6D56;
+  }
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+  h2 .main_title {
+    font-size: 23px;
+  }
+  h2 .main_title::after {
+    bottom: 5px;
+  }
+  .collection_wrapper .collection_list {
+    flex-wrap: wrap;
+  }
+  .collection_wrapper .collection_list figure {
+    width: calc(49% - 7px);
+  }
+  .collection_wrapper .collection_list figure:nth-of-type(1),
+.collection_wrapper .collection_list figure :nth-of-type(2) {
+    margin-bottom: 2.5rem;
+  }
+  .collection_wrapper .collection_list figure:nth-of-type(3),
+.collection_wrapper .collection_list figure :nth-of-type(4) {
+    margin-bottom: 0;
+  }
+  .collection_wrapper .collection_list figure img {
+    width: 100%;
+  }
+  .collection_wrapper .collection_list figure figcaption {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+  }
+  .month_wrapper {
+    width: 100%;
+    max-width: 539px;
+    margin: 0 auto;
+    margin-bottom: 4.5rem;
+  }
+  .month_wrapper .month_cont {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+  .month_wrapper .month_cont:nth-of-type(2) {
+    flex-direction: row;
+  }
+  .month_wrapper .month_cont:nth-of-type(2) .month_area {
+    background-color: #000;
+  }
+  .month_wrapper .month_cont .month_img {
+    width: 100%;
+  }
+  .month_wrapper .month_cont .month_img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .month_wrapper .month_cont .month_area {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .month_wrapper .month_cont .month_area .month_spot {
+    width: 100%;
+  }
+  .month_wrapper .month_cont .month_area .month_spot .month_title {
+    font-size: 20px;
+  }
+  .month_wrapper .month_cont .month_area .month_spot .month_title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-color: #7C6D56;
+  }
+  .month_wrapper .month_cont .month_area .month_spot p:nth-of-type(1) {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .month_wrapper .month_cont .month_area .month_spot p:nth-of-type(2) {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .new_wrapper .new_cont {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .new_wrapper .new_area {
+    width: 47%;
+    max-width: 700px;
+  }
+  .new_wrapper .new_area:first-child {
+    margin-bottom: 2.5rem;
+  }
+  .new_wrapper .new_area .new_spot {
+    width: 100%;
+  }
+  .new_wrapper .new_area .new_spot img {
+    width: 100%;
+  }
+  .new_wrapper .new_area .new_text_spot {
+    margin-top: 15px;
+  }
+  .new_wrapper .new_area .new_text_spot b {
+    margin-bottom: 15px;
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+  .new_wrapper .new_area .new_text_spot p {
+    line-height: 23px;
+  }
+  .making_perfume_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    padding-top: 0px;
+    background-position: 55% 50%;
+  }
+  .making_perfume_wrapper .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .making_perfume_wrapper .wrap .making_perfume_cont {
+    text-align: center;
+  }
+  .making_perfume_wrapper .wrap .making_perfume_cont h2 {
+    font-size: 33px;
+  }
+  .making_perfume_wrapper .wrap .making_perfume_cont p:nth-of-type(1) {
+    font-size: 33px;
+  }
+  .making_perfume_wrapper .wrap .making_perfume_cont p:nth-of-type(2) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+  .wrap {
+    width: 90%;
+  }
+  .mb180 {
+    margin-bottom: 4.5rem;
+  }
+  a.more_btn {
+    width: 220px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    border: 2px solid #7C6D56;
+  }
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+  h2 .main_title {
+    font-size: 30px;
+  }
+  h2 .main_title::after {
+    bottom: 9px;
+  }
+  .collection_wrapper .collection_list {
+    flex-wrap: wrap;
+  }
+  .collection_wrapper .collection_list figure {
+    width: calc(49% - 7px);
+  }
+  .collection_wrapper .collection_list figure:nth-of-type(1),
+.collection_wrapper .collection_list figure :nth-of-type(2) {
+    margin-bottom: 2.5rem;
+  }
+  .collection_wrapper .collection_list figure:nth-of-type(3),
+.collection_wrapper .collection_list figure :nth-of-type(4) {
+    margin-bottom: 0;
+  }
+  .collection_wrapper .collection_list figure img {
+    width: 100%;
+  }
+  .collection_wrapper .collection_list figure figcaption {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+  }
+  .month_wrapper {
+    width: 100%;
+  }
+  .month_wrapper .month_cont {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+  .month_wrapper .month_cont:nth-of-type(2) {
+    flex-direction: row;
+  }
+  .month_wrapper .month_cont:nth-of-type(2) .month_area {
+    background-color: #000;
+  }
+  .month_wrapper .month_cont .month_img {
+    width: 100%;
+  }
+  .month_wrapper .month_cont .month_img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .month_wrapper .month_cont .month_area {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .month_wrapper .month_cont .month_area .month_spot {
+    width: 100%;
+  }
+  .month_wrapper .month_cont .month_area .month_spot .month_title {
+    font-size: 20px;
+  }
+  .month_wrapper .month_cont .month_area .month_spot .month_title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-color: #7C6D56;
+  }
+  .month_wrapper .month_cont .month_area .month_spot p:nth-of-type(1) {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .month_wrapper .month_cont .month_area .month_spot p:nth-of-type(2) {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .new_wrapper .new_cont {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .new_wrapper .new_area {
+    width: 100%;
+  }
+  .new_wrapper .new_area:first-child {
+    margin-bottom: 2.5rem;
+  }
+  .new_wrapper .new_area .new_spot {
+    width: 100%;
+  }
+  .new_wrapper .new_area .new_spot img {
+    width: 100%;
+  }
+  .new_wrapper .new_area .new_text_spot {
+    margin-top: 15px;
+  }
+  .new_wrapper .new_area .new_text_spot b {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .new_wrapper .new_area .new_text_spot p {
+    line-height: 20px;
+  }
+  .making_perfume_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    padding-top: 0px;
+    background-position: 55% 50%;
+  }
+  .making_perfume_wrapper .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .making_perfume_wrapper .wrap .making_perfume_cont {
+    text-align: center;
+  }
+  .making_perfume_wrapper .wrap .making_perfume_cont h2 {
+    font-size: 30px;
+  }
+  .making_perfume_wrapper .wrap .making_perfume_cont p:nth-of-type(1) {
+    font-size: 30px;
+  }
+  .making_perfume_wrapper .wrap .making_perfume_cont p:nth-of-type(2) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */
